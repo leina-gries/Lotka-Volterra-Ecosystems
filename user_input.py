@@ -1,5 +1,9 @@
+#! /usr/bin/env python3
 import math
+from datetime import datetime
+datetime.now().replace(microsecond=0).isoformat()
 def main():
+    print(datetime.now().replace(microsecond=0).isoformat())
     dt = input('dt? must be a decimal. suggested: 0.001     ')
     dt = float(dt)
     N0B = input('starting population of prey? integer value only. suggested: 2      ')
@@ -18,6 +22,9 @@ def main():
     NGen = int(NGen)
     NB_Previous = N0B
     NW_Previous = N0W
+    print('#from variables:', 'dt=', dt, 'NOB=', N0B, 'NOW=', N0W, 'Prey-side interactionrate=',  Prey_Side_Interaction_Rate, 'Predator-side interaction rate=', Predator_Side_Interaction_Rate, 'Predator death rate',  Predator_Death_Rate, 'NGen =', NGen)
+
+
 
     for i in range(NGen):
         dNB =(Prey_Growth_Rate * NB_Previous * dt) - (Prey_Side_Interaction_Rate * NB_Previous * NW_Previous * dt)

@@ -1,6 +1,9 @@
+#! /usr/bin/env python3
 import math
+from datetime import datetime
+datetime.now().replace(microsecond=0).isoformat()
 def main():
-
+    print('##' datetime.now().replace(microsecond=0).isoformat())
     dt = 0.001
     N0B = 2
     N0W = 2
@@ -12,7 +15,7 @@ def main():
     NB_Previous = N0B
     NW_Previous = N0W
     Var_Range = 400
-
+    print('#from variables:', 'dt=', dt, 'NOB=', N0B, 'NOW=', N0W, 'Prey-side interactionrate=',  Prey_Side_Interaction_Rate, 'Predator-side interaction rate=', Predator_Side_Interaction_Rate, 'Predator death rate',  Predator_Death_Rate, 'NGen =', NGen, 'range of prey growth rate=', Var_Range)
     for i in range(Var_Range):
         Prey_Growth_Rate = i+1
         for z in range(NGen):
@@ -40,7 +43,7 @@ def main():
                 break
         NB_Previous = N0B
         NW_Previous = N0W
-
+    
 
 main()
 
