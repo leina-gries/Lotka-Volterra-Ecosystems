@@ -3,7 +3,7 @@ import math
 from datetime import datetime
 datetime.now().replace(microsecond=0).isoformat()
 def main():
-    print(datetime.now().replace(microsecond=0).isoformat())
+    print('#',datetime.now().replace(microsecond=0).isoformat())
     dt = input('dt? must be a decimal. suggested: 0.001     ')
     dt = float(dt)
     N0B = input('starting population of prey? integer value only. suggested: 2      ')
