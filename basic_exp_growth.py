@@ -4,7 +4,7 @@
 from datetime import datetime
 datetime.now().replace(microsecond=0).isoformat()
 def main():
-    print(datetime.now().replace(microsecond=0).isoformat())
+    print('#',datetime.now().replace(microsecond=0).isoformat())
     
     import math
     A = input("starting population?")

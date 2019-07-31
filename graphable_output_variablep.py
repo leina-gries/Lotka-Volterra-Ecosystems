@@ -3,7 +3,7 @@ import math
 from datetime import datetime
 datetime.now().replace(microsecond=0).isoformat()
 def main():
-    print('##' datetime.now().replace(microsecond=0).isoformat())
+    print('##', datetime.now().replace(microsecond=0).isoformat())
     dt = 0.001
     N0B = 2
     N0W = 2
