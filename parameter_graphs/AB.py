@@ -15,8 +15,8 @@ def main():
     NGen = 4500
     NB_Previous = N0B
     NW_Previous = N0W
-    Prey_Growth_Range = 195
-    Prey_Death_Range = 195
+    Prey_Growth_Range = 19
+    Prey_Death_Range = 19
     print('#from variables:', 'dt=', dt, 'NOB=', N0B, 'NOW=', N0W, 'Prey Death Rate=', Predator_Side_Interaction_Rate, 'Predator Death Rate=',  Predator_Death_Rate, 'NGen =', NGen, 'Prey Growth Rate Range=', Prey_Growth_Range, 'Prey Death Rate=', Prey_Death_Range)
 
     x1_data_list = []
@@ -59,7 +59,7 @@ def main():
                     NW_New = 0
                     x2_data_list.append((Prey_Growth_Rate))
                     y2_data_list.append((Prey_Side_Interaction_Rate))
-                    color_list.append('2')
+                    #color_list.append('2')
                     break
                 else:
                     NW_Previous = NW_New
