@@ -60,7 +60,7 @@ def main():
         add = wo + bo
         return(math.log(add))
     
-    bnds = ((0, 8), (0,6), (0,60), (0,60))
+    bnds = ((0, None), (0,None), (0,None), (0,None))
    ### compare(0.5)
     #print(compare(0.5))
    # x0= (1.5, 1.5)

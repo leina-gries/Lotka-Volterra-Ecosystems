@@ -17,7 +17,7 @@ def main():
         Prey_Side_Interaction_Rate = 0.015
         Predator_Side_Interaction_Rate = Predator_Side_Interaction_Rate
         Predator_Death_Rate = 0.5
-        NGen = 30
+        NGen = 1
         NB_Previous = N0B
         NW_Previous = N0W
         prey = []
@@ -56,7 +56,7 @@ def main():
         wo=sum(abs(np.subtract(known[1], guess[1])))
         bo=sum(abs(np.subtract(known[0], guess[0])))
         add = wo + bo
-        return(add)
+        return(math.log(add))
     
     bnds = ((0, 8), (0,6))
    ### compare(0.5)
